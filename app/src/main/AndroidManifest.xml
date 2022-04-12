@@ -47,6 +47,28 @@
                     android:pathPattern="/Extras" />
 
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="saurabhy177.github.io"
+                    android:path="/?page" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="saurabhy177.github.io"
+                    android:path="/page" />
+            </intent-filter>
 
         </activity>
     </application>
